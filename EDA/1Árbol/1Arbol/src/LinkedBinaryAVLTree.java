@@ -436,7 +436,6 @@ public class LinkedBinaryAVLTree <T extends Comparable <T>> extends LinkedBianar
         return lista.toString();
     }
 
-
     public int altura() { //METODO QUE SIMPLEMENTE MANDA A LLAMAR AL METODO alturaR CON LA RAIZ PARA SABER LA ALTURA COMPLETA DEL ARBOL ENTERO
         return alturaR(raiz);
     }
@@ -472,7 +471,6 @@ public class LinkedBinaryAVLTree <T extends Comparable <T>> extends LinkedBianar
     public void actualizaFe() { //MÉTODO QUE NOS PERMITE ACTUALIZAR EL FE DE TODOS LOS NODOS 
         actualizaFe(raiz);
     }
-
 
     public void printTree() {
         if (raiz == null) {
@@ -516,7 +514,7 @@ public class LinkedBinaryAVLTree <T extends Comparable <T>> extends LinkedBianar
             }
             treeLevels.add(levelNodes);
         }
-    
+        
         // Print the tree
         for (ArrayList<String> levelNodes : treeLevels) {
             for (String node : levelNodes) {
@@ -528,49 +526,29 @@ public class LinkedBinaryAVLTree <T extends Comparable <T>> extends LinkedBianar
 
     public static void main(String[] args) {
 
-        LinkedBinaryAVLTree<Integer> clase = new LinkedBinaryAVLTree<Integer>();
-
+        /* LinkedBinaryAVLTree<Integer> clase = new LinkedBinaryAVLTree<Integer>();
         clase.inserta(100);
-        //System.out.println("Árbol despues de insertar100: \n" + clase.porNivel());
         clase.inserta(300);
-        //System.out.println("Árbol despues de insertar300: \n" + clase.porNivel());
         clase.inserta(400);
-        //System.out.println("Árbol despues de insertar400: \n" + clase.porNivel());
         clase.inserta(50);
-        //System.out.println("Árbol despues de insertar50: \n" + clase.porNivel());
         clase.inserta(200);
-        //System.out.println("Árbol despues de insertar200: \n" + clase.porNivel());
         clase.inserta(250);
-        //System.out.println("Árbol despues de insertar250: \n" + clase.porNivel());
         clase.inserta(75);
-        //System.out.println("Árbol despues de insertar75: \n" + clase.porNivel());
         clase.inserta(350);
-        //System.out.println("Árbol despues de insertar350: \n" + clase.porNivel());
         clase.inserta(500);
-        //System.out.println("Árbol despues de insertar500: \n" + clase.porNivel());
         clase.inserta(375);
-        //System.out.println("Árbol despues de insertar375: \n" + clase.porNivel());
-        
         //System.out.println("Árbol despues de insertar: \n" + clase.porNivel());
         System.out.println("Imprimir: \n");
         clase.printTree();
 
         clase.borra(500);
-        //System.out.println("Árbol despues de borrar500: \n" + clase.porNivel());
         clase.borra(400);
-        //System.out.println("Árbol despues de borrar400: \n" + clase.porNivel());
         clase.borra(200);
-        //System.out.println("Árbol despues de borrar200: \n" + clase.porNivel());
-
         //System.out.println("Árbol despues de borrar: \n" + clase.porNivel());
         System.out.println("Imprimir: \n");
-        clase.printTree();
+        clase.printTree(); */
 
-        System.out.println("Imprimir: \n");
-        clase.printTree();
-
-
-        /* LinkedBinaryAVLTree<Integer> arbol = new LinkedBinaryAVLTree<Integer>();
+        LinkedBinaryAVLTree<Integer> arbol = new LinkedBinaryAVLTree<Integer>();
         arbol.inserta(10);
         arbol.inserta(5);
         arbol.inserta(15);
@@ -602,6 +580,9 @@ public class LinkedBinaryAVLTree <T extends Comparable <T>> extends LinkedBianar
         arbol.borra (1050320);
         System.out.println("Despues de quitar 1050320 \n" + arbol.porNivel());
 
+        System.out.println("Imprimir");
+        arbol.printTree();
+
         /* NodoAVL<Integer> aux = arbol.quienTieneFe(arbol.raiz);
         if (aux != null) {
             System.out.println(aux.elem + ", Su fe es: " + aux.fe + ", Aux.der.fe es: " + aux.der.fe + ", Aux.izq.fe es: " + aux.izq.fe);
@@ -609,7 +590,6 @@ public class LinkedBinaryAVLTree <T extends Comparable <T>> extends LinkedBianar
             System.out.println("No hay nodos con fe 2 o -2");
         } */
 
-        /* arbol.inserta(9);
-        System.out.println("Despues de insertar 9 " + arbol.porNivel()); */
+        
     }   
 }
